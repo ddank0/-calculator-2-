@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     background: #091921;
 }
+   
 .box1 {
     box-shadow: 5px 5px 25px -8px aqua;
     border-radius: 3.5vh;
@@ -23,12 +24,12 @@ body {
 .calculator {
     position: relative;
     display: grid;
-    box-shadow: 0px 0px 0px 0vh rgb(5, 15, 19);
+    /* box-shadow: 0px 0px 0px 0vh rgb(5, 15, 19); */
     border-radius: 3.5vh;
 }
 .calculator .value {
     grid-column: span 4;
-    height: 15vh;
+    height: 14vh;
     text-align: right;
     border: none ;
     outline: none;
@@ -36,13 +37,11 @@ body {
     font-size: 2.4vh;
     border-top-left-radius: 3.5vh;
     border-top-right-radius: 3.5vh;
-
-
 }
 .calculator span {
     display: grid;
-    width: 11vh;
-    height: 12vh;
+    width: 9.5vh;
+    height: 9.5vh;
     color: white ;
     background: #0c2835;
     place-items: center;
@@ -59,7 +58,7 @@ body {
 }
 .calculator span.clear {
     grid-column: span 2;
-    width: 22vh;
+    width: 19vh;
     background: #ff3077;
 }
 .calculator span.clear:active {
@@ -73,7 +72,7 @@ body {
 .calculator span.equal {
     background: #03b1ff;
     grid-column: span 2;
-    width: 22vh;
+    width: 19vh;
     border-bottom-right-radius: 3.5vh;
 }
 .calculator span.equal:active {
