@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,600,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+.calculator {
+    position: relative;
+    display: grid;
+}
+.calculator .value {
+    grid-column: span 4;
+    height: 15vh;
+    text-align: right;
+    border: none ;
+    outline: none;
+    padding: 2vh;
+    font-size: 3.6vh;
+}
+.calculator span {
+    display: grid;
+    width: 12vh;
+    height: 12vh;
+    color: #ffff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+    transition: 0.5s;
+}
+.calculator span:active {
+    background: #74ff3b;
+    color: #111;
+}
+.calculator span:hover {
+    background: #74ff3b;
+    color: #111;
+}
+.calculator span.clear {
+    grid-column: span 2;
+    width: 24vh;
+    background: #ff3077;
+}
+.calculator span.clear:active {
+    background: #7e183b;
+}
+.calculator span.clear:hover {
+    background: #7e183b;
+    color: white;
+    
+}
+.calculator span.equal {
+    background: #03b1ff;
+    grid-column: span 2;
+    width: 24vh;
+}
+.calculator span.equal:active {
+    background: #01557c;
+    color: white;
+    
+}
+.calculator span.equal:hover {
+    background: #01557c;
+    color: white;
+    
+}
