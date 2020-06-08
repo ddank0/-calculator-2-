@@ -11,9 +11,20 @@ body {
     min-height: 100vh;
     background: #091921;
 }
+.box1 {
+    box-shadow: 5px 5px 25px -8px aqua;
+    border-radius: 3.5vh;
+}
+.box2 {
+    box-shadow: -5px -5px 25px -8px greenyellow;
+    border-radius: 3.5vh;
+}
+
 .calculator {
     position: relative;
     display: grid;
+    box-shadow: 0px 0px 0px 0vh rgb(5, 15, 19);
+    border-radius: 3.5vh;
 }
 .calculator .value {
     grid-column: span 4;
@@ -23,12 +34,16 @@ body {
     outline: none;
     padding: 2vh;
     font-size: 2.4vh;
+    border-top-left-radius: 3.5vh;
+    border-top-right-radius: 3.5vh;
+
+
 }
 .calculator span {
     display: grid;
     width: 11vh;
     height: 12vh;
-    color: white;
+    color: white ;
     background: #0c2835;
     place-items: center;
     border: 1px solid rgba(0,0,0,.1);
@@ -59,6 +74,7 @@ body {
     background: #03b1ff;
     grid-column: span 2;
     width: 22vh;
+    border-bottom-right-radius: 3.5vh;
 }
 .calculator span.equal:active {
     background: #01557c;
@@ -68,5 +84,9 @@ body {
 .calculator span.equal:hover {
     background: #01557c;
     color: white;
+    
+}
+.calculator span.dot{
+    border-bottom-left-radius: 3.5vh;
     
 }
