@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #091921;
+    background: #060c21;
 }
    
 /* .box1 {
@@ -22,8 +22,21 @@ body {
     height: 61.5vh;
     
     background: linear-gradient(315deg,#e91e63,#5d02ff);
-    transform: skew(2deg,4deg);
+    transform: skew(2deg,2deg);
     z-index: -1;
+
+}
+
+.box1 .box2:after {
+    content: '';
+    position: absolute;
+    width: 38vh;
+    height: 61.5vh;
+    filter: blur(4vh);
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    transform: skew(2deg,2deg);
+    margin-top: -61.5vh;
+    z-index: -2;
 
 }
 
@@ -44,6 +57,7 @@ body {
     font-size: 4.4vh;
     border-top-left-radius:0 ;
     border-top-right-radius: 0;
+    /* border: 1px solid rgba(253, 253, 253, 0.041); */
     background-color: black;
     color: #ffff;
 }
