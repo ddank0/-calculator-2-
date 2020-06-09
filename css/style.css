@@ -12,13 +12,19 @@ body {
     background: #091921;
 }
    
-.box1 {
-    box-shadow: 5px 5px 25px -8px aqua;
-    border-radius: 3.5vh;
-}
-.box2 {
-    box-shadow: -5px -5px 25px -8px greenyellow;
-    border-radius: 3.5vh;
+/* .box1 {
+    
+} */
+.box1 .box2:before {
+    content: '';
+    position: absolute;
+    width: 38vh;
+    height: 61.5vh;
+    
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    transform: skew(2deg,4deg);
+    z-index: -1;
+
 }
 
 .calculator {
@@ -30,62 +36,69 @@ body {
 .calculator .value {
     grid-column: span 4;
     height: 14vh;
+    width: 38vh;
     text-align: right;
     border: none ;
     outline: none;
-    padding: 2vh;
-    font-size: 2.4vh;
-    border-top-left-radius: 3.5vh;
-    border-top-right-radius: 3.5vh;
+    padding-right: 2vh;
+    font-size: 4.4vh;
+    border-top-left-radius:0 ;
+    border-top-right-radius: 0;
+    background-color: black;
+    color: #ffff;
 }
 .calculator span {
     display: grid;
     width: 9.5vh;
     height: 9.5vh;
     color: white ;
-    background: #0c2835;
+    background: black;
     place-items: center;
-    border: 1px solid rgba(0,0,0,.1);
+    /* border: 1px solid rgba(253, 253, 253, 0.041); */
     transition: 0.5s;
+    font-size: 3vh;
 }
 .calculator span:active {
-    background: #74ff3b;
+    background: #ffff;
     color: #111;
 }
 .calculator span:hover {
-    background: #74ff3b;
+    background: rgb(211, 211, 211);
     color: #111;
+
 }
 .calculator span.clear {
     grid-column: span 2;
     width: 19vh;
-    background: #ff3077;
+    /* background: #ff3077; */
+    font-size: vh;
 }
-.calculator span.clear:active {
+/* .calculator span.clear:active {
     background: #7e183b;
 }
 .calculator span.clear:hover {
     background: #7e183b;
     color: white;
     
-}
+} */
 .calculator span.equal {
-    background: #03b1ff;
+    /* background: #03b1ff; */
     grid-column: span 2;
     width: 19vh;
-    border-bottom-right-radius: 3.5vh;
+    border-bottom-right-radius: 0vh;
+    font-size: 5vh;
 }
-.calculator span.equal:active {
+/* .calculator span.equal:active {
     background: #01557c;
     color: white;
     
 }
 .calculator span.equal:hover {
     background: #01557c;
-    color: white;
+    color: white; 
     
-}
+}*/
 .calculator span.dot{
-    border-bottom-left-radius: 3.5vh;
+    border-bottom-left-radius: 0vh;
     
 }

@@ -1,0 +1,12 @@
+box-shadow: 5px 5px 25px -8px aqua;
+border-radius: 3.5vh;
+
+box-shadow: -5px -5px 25px -8px greenyellow;
+border-radius: 3.5vh;
+
+linear-gradiant:
+
+315deg,#ff0057,#e64a19
+315deg,#89ff00,#00dcb4
+315deg,#e91e63,#5d02ff
+315deg,#ff0000,#ffc107
